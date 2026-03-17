@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+}
+
+.screen {
+  display: none;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  display: flex;
+}
+
+/* LOGIN */
+#login input {
+  width: 80%;
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+#login button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+/* CAPA */
+.card {
+  background: #f7eaea;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.laco {
+  font-size: 50px;
+}
+
+.foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: url('foto.JPG') center/cover;
+  margin: 15px auto;
+  border: 4px solid white;
+}
+
+.texto {
+  color: #111;
+  font-weight: bold;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* LIVRO */
+#book {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  width: 90%;
+  max-width: 400px;
+  height: 500px;
+  background: repeating-linear-gradient(
+    white,
+    white 28px,
+    #ccc 29px
+  );
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
+  position: relative;
+}
+
+.page.active {
+  display: block;
+}
+
+.text-content {
+  line-height: 28px;
+  font-size: 15px;
+  color: #333;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 12px 20px;
+  margin: 5px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}

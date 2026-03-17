@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Book 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔐 LOGIN -->
+<div id="login" class="screen active">
+  <h2>Digite a senha 💌</h2>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Entrar</button>
+  <p id="error"></p>
+</div>
+
+<!-- 🎀 CAPA -->
+<div id="cover" class="screen">
+  <div class="card">
+    <div class="laco">🎀</div>
+    <div class="foto"></div>
+    <p class="texto">abre com carinho 💌</p>
+    <button onclick="openBook()">Abrir</button>
+  </div>
+</div>
+
+<!-- 📖 LIVRO -->
+<div id="book" class="screen">
+
+  <div id="pages-container"></div>
+
+  <div class="controls">
+    <button onclick="prevPage()">⬅️</button>
+    <button onclick="nextPage()">➡️</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
